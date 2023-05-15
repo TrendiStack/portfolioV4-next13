@@ -12,7 +12,6 @@
     "@headlessui/react": "^1.7.14",
     "autoprefixer": "10.4.14",
     "axios": "^1.4.0",
-    "custom-cursor-react": "^1.0.5",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.2",
     "gray-matter": "^4.0.3",
@@ -32,8 +31,5 @@
     "styled-components": "^6.0.0-rc.1",
     "tailwindcss": "3.3.2",
     "uuid": "^9.0.0"
-  },
-  "engines": {
-    "react": "^18.0.0"
   }
 }

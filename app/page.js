@@ -4,7 +4,6 @@ import { stagger } from './animations';
 import { useIsomorphicLayoutEffect } from '@/utils';
 import { useRef } from 'react';
 import Button from './components/Button';
-import Cursor from './components/Cursor';
 import data from '../data/portfolio.json';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -49,7 +48,6 @@ export default function Home() {
 
   return (
     <main className={`relative ${data.showCursor && 'cursor-none'}`}>
-      {data.showCursor && <Cursor />}
       <div className="gradient-circle"></div>
       <div className="gradient-circle-bottom"></div>
       <div className="container mx-auto mb-10">

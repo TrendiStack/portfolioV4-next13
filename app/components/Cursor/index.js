@@ -2,9 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
-import CustomCursor from 'custom-cursor-react';
-
-import 'custom-cursor-react/dist/index.css';
+// import CustomCursor from 'custom-cursor-react';
+// import 'custom-cursor-react/dist/index.css';
 
 const Cursor = () => {
   const theme = useTheme();
@@ -23,7 +22,7 @@ const Cursor = () => {
   }, []);
   return (
     <>
-      {mount && (
+      {/* {mount && (
         <CustomCursor
           targets={['.link']}
           customClass="custom-cursor"
@@ -37,7 +36,7 @@ const Cursor = () => {
           targetOpacity={0.5}
           targetScale={2}
         />
-      )}
+      )} */}
     </>
   );
 };

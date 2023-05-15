@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import Cursor from '../../components/Cursor';
+
 import Header from '../../components/Header';
 import ContentSection from '../../components/ContentSection';
 import Footer from '../../components/Footer';
@@ -43,8 +43,6 @@ const BlogPost = () => {
 
   return (
     <>
-      {data.showCursor && <Cursor />}
-
       <div
         className={`container mx-auto mt-10 ${
           data.showCursor && 'cursor-none'

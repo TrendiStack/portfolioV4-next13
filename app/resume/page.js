@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useTheme } from 'next-themes';
 import Button from '../components/Button';
-import Cursor from '../components/Cursor';
+
 import data from '@/data/portfolio.json';
 import Header from '../components/Header';
 import ProjectResume from '../components/ProjectResume';
@@ -32,7 +32,7 @@ const Resume = () => {
           </Button>
         </div>
       )}
-      {data.showCursor && <Cursor />}
+
       <div
         className={`container mx-auto mb-10 ${
           data.showCursor && 'cursor-none'

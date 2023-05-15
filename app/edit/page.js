@@ -5,7 +5,6 @@ import { useTheme } from 'next-themes';
 import { v4 as uuidv4 } from 'uuid';
 import axios from 'axios';
 import Button from '../components/Button';
-import Cursor from '../components/Cursor';
 import Header from '../components/Header';
 import yourData from '@/data/portfolio.json';
 
@@ -146,7 +145,7 @@ const Edit = () => {
   return (
     <div className={`container mx-auto ${data.showCursor && 'cursor-none'}`}>
       <Header isBlog />
-      {data.showCursor && <Cursor />}
+
       <div className="mt-10">
         <div className={`${theme === 'dark' ? 'bg-transparent' : 'bg-white'}`}>
           <div className="flex items-center justify-between">
